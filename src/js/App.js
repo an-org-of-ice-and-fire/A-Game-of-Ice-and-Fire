@@ -1,3 +1,5 @@
+// @flow
+
 import React from "react";
 import logo from "./../static_assets/logo.svg";
 import "./../css/App.css";
