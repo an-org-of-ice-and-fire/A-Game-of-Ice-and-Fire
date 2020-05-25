@@ -1,27 +1,21 @@
 // @flow
 
+import MainMenu from "./route_containers/MainMenu.react.js";
+
 import * as React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import logo from "./../static_assets/logo.svg";
 import "./../css/App.css";
 
 function App(): React.Element<*> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/">
+          <MainMenu />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
