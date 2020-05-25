@@ -7,9 +7,14 @@
 [lints]
 
 [options]
+exact_by_default=true
+experimental.const_params=true
+include_warnings=true
+types_first=true
 
 [strict]
 nonstrict-import
+sketchy-null
 unclear-type
 unsafe-getters-setters
 untyped-import
