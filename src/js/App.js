@@ -1,10 +1,10 @@
 // @flow
 
-import React from "react";
+import * as React from "react";
 import logo from "./../static_assets/logo.svg";
 import "./../css/App.css";
 
-function App() {
+function App(): React.Element<*> {
   return (
     <div className="App">
       <header className="App-header">
