@@ -1,9 +1,11 @@
 // @flow
 
-import * as React from "react";
-import { Link } from "react-router-dom";
+"use strict";
 
-function MainMenu() {
+const React = require("react");
+const { Link } = require("react-router-dom");
+
+function MainMenu(): React.Element<*> {
   return (
     <nav>
       <ul>
