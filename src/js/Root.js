@@ -1,10 +1,9 @@
 // @flow
 
-const React = require("react");
-const { BrowserRouter: Router, Switch, Route } = require("react-router-dom");
-const {
-  Components: { MainMenu },
-} = require("App");
+import { MainMenu } from "App";
+
+import * as React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function Root(): React.Element<*> {
   return (
@@ -18,4 +17,5 @@ function Root(): React.Element<*> {
   );
 }
 
+// exported as default since not routed through App.js
 export default Root;
