@@ -1,11 +1,11 @@
 // @flow
 
-const React = require("react");
-const { Link } = require("react-router-dom");
+import * as React from "react";
+import { Link } from "react-router-dom";
 
 function MainMenu(): React.Element<*> {
   return (
-    <nav>
+    <nav style={{ position: "absolute" }}>
       <ul>
         <li>
           <Link to="/newgame">New Game</Link>
@@ -21,4 +21,4 @@ function MainMenu(): React.Element<*> {
   );
 }
 
-export default MainMenu;
+export { MainMenu };
