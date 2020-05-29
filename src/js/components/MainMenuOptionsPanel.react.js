@@ -1,9 +1,6 @@
 // @flow
 
-import { StaticAssets } from "App";
-
 import * as React from "react";
-import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
 
 function MainMenuOptionsPanel(): React.Element<*> {
