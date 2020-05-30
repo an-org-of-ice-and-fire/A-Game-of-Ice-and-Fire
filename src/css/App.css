@@ -23,5 +23,25 @@
 }
 
 .MainMenuOptionsPanel-root {
-  position: absolute;
+  background-color: black;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+  min-width: 720px; /* 50% */
+  width: 50%;
+}
+
+.MainMenuOptionsPanel-header {
+  color: white;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 36px;
+  text-align: center;
+}
+
+.MainMenuOptionsPanel-buttonGroup {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+  width: 100%;
 }

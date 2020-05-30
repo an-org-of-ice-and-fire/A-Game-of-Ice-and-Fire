@@ -1,25 +1,35 @@
 // @flow
 
 import * as React from "react";
-import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
+import Card from "react-bootstrap/Card";
 
 function MainMenuOptionsPanel(): React.Element<*> {
   return (
-    <div className={"MainMenuOptionsPanel-root"}>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/newgame">New Game</Link>
-          </li>
-          <li>
-            <Link to="/loadgame">Resume Game</Link>
-          </li>
-          <li>
-            <Link to="/awoiaf">A Wiki of Ice and Fire</Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <>
+      <Card className={"MainMenuOptionsPanel-root"}>
+        <Card.Body>
+          <div className={"MainMenuOptionsPanel-header"}>
+            A Game of Ice and Fire
+          </div>
+          <ButtonGroup
+            aria-label="Basic example"
+            className={"MainMenuOptionsPanel-buttonGroup"}
+          >
+            <Button href="/newgame" variant="dark">
+              New Game
+            </Button>
+            <Button href="/loadgame" variant="dark">
+              Resume Game
+            </Button>
+            <Button href="/awoiaf" variant="dark">
+              A Wiki of Ice and Fire
+            </Button>
+          </ButtonGroup>
+        </Card.Body>
+      </Card>
+    </>
   );
 }
 
