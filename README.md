@@ -1,1 +1,1 @@
-![Readme Background](/src/static_assets/readme.png)
+![Readme Background](/src/static_assets/readme.PNG)
